@@ -1,7 +1,7 @@
 # VHDL-programs
 VHDL programs made by me just for fun
 
-You can use these examples for studying purpose :)
+You can use these examples for studying or something else :)
 
 I'll try make them most readable and easy to learn as possible
 
