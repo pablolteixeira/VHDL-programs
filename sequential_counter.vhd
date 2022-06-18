@@ -1,15 +1,14 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
 
-entity Estudo is 
+entity sequential_counter is 
 	port(
 		clk, reset: in std_logic;
 		q: out std_logic_vector(2 downto 0)
 		);
-end Estudo;
+end sequential_counter;
 
-architecture squence_count of Estudo is
+architecture squence_count of sequential_counter is
 	signal r_reg, r_next: std_logic_vector(2 downto 0);	
 begin 
 	process(clk, reset)
