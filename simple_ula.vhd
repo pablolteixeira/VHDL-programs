@@ -2,16 +2,16 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity Estudo is 
+entity simple_ula is 
 	port(
 		a, b: in std_logic_vector(3 downto 0);
 		sel: in std_logic_vector(2 downto 0);
 		over, zero, neg: out std_logic;
 		c: out std_logic_vector(3 downto 0)
 		);
-end Estudo;
+end simple_ula;
 
-architecture ula of Estudo is
+architecture ula of simple_ula is
 	signal result, addition, subtration, and_logic, or_logic, or_exclusive, negative: signed(4 downto 0);
 begin
 	addition <= signed(a(3) & a) + signed(b(3) & b);
